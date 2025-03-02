@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoLend Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+</head>
+<body>
+    {% include 'base.html' %}
+    <div class="dashboard">
+        <h1>Welcome to Your Dashboard</h1>
+        <div class="loan-status">
+            <h2>Your Loan Status</h2>
+            <p>Details about your current loans will be displayed here.</p>
+        </div>
+        <div class="investment-opportunities">
+            <h2>Investment Opportunities</h2>
+            <p>Explore available investment options tailored for you.</p>
+        </div>
+        <div class="user-info">
+            <h2>Your Information</h2>
+            <p>Manage your account details and preferences.</p>
+        </div>
+    </div>
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>

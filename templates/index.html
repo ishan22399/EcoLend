@@ -1,0 +1,469 @@
+{% extends "base.html" %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+<div class="hero-section">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6 hero-text-column">
+                <h1 class="hero-title animate__animated animate__fadeInUp">Welcome to <span class="text-accent">EcoLend</span></h1>
+                <p class="hero-subtitle animate__animated animate__fadeInUp animate__delay-1s">Sustainable lending solutions for a greener tomorrow</p>
+                <div class="hero-buttons animate__animated animate__fadeInUp animate__delay-2s">
+                    <a href="{{ url_for('about') }}" class="btn btn-primary btn-lg me-3">Learn More</a>
+                    <a href="{{ url_for('signup') }}" class="btn btn-outline-success btn-lg">Get Started</a>
+                </div>
+            </div>
+            <div class="col-lg-6 hero-image-column animate__animated animate__fadeIn animate__delay-1s">
+                <img src="{{ url_for('static', filename='images/eco-finance.svg') }}" alt="EcoLend Illustration" class="img-fluid">
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="features-section py-5">
+    <div class="container">
+        <h2 class="section-title text-center mb-5 animate__animated animate__fadeIn" data-aos="fade-up">Why Choose EcoLend</h2>
+        <div class="row g-4">
+            <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="bi bi-leaf-fill"></i>
+                    </div>
+                    <h3>Eco-Friendly Investment</h3>
+                    <p>Support sustainable projects that make a positive impact on our planet's future.</p>
+                </div>
+            </div>
+            <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="bi bi-graph-up"></i>
+                    </div>
+                    <h3>Competitive Returns</h3>
+                    <p>Earn competitive interest rates while funding projects you believe in.</p>
+                </div>
+            </div>
+            <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="bi bi-shield-check"></i>
+                    </div>
+                    <h3>Secure Platform</h3>
+                    <p>Advanced security protocols to keep your investments and data safe.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="how-it-works py-5 bg-light">
+    <div class="container">
+        <h2 class="section-title text-center mb-5" data-aos="fade-up">How It Works</h2>
+        <div class="timeline">
+            <div class="timeline-item" data-aos="fade-right">
+                <div class="timeline-number">1</div>
+                <div class="timeline-content">
+                    <h3>Create an Account</h3>
+                    <p>Sign up in minutes with our simple registration process.</p>
+                </div>
+            </div>
+            <div class="timeline-item" data-aos="fade-left">
+                <div class="timeline-number">2</div>
+                <div class="timeline-content">
+                    <h3>Browse Projects</h3>
+                    <p>Explore eco-friendly projects seeking funding.</p>
+                </div>
+            </div>
+            <div class="timeline-item" data-aos="fade-right">
+                <div class="timeline-number">3</div>
+                <div class="timeline-content">
+                    <h3>Invest</h3>
+                    <p>Choose projects and invest with as little as $10.</p>
+                </div>
+            </div>
+            <div class="timeline-item" data-aos="fade-left">
+                <div class="timeline-number">4</div>
+                <div class="timeline-content">
+                    <h3>Track Impact</h3>
+                    <p>Monitor your investments and see your environmental impact grow.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="cta-section py-5">
+    <div class="container text-center" data-aos="zoom-in">
+        <h2 class="mb-4">Ready to make a difference?</h2>
+        <p class="lead mb-4">Join thousands of investors funding a sustainable future.</p>
+        <a href="{{ url_for('signup') }}" class="btn btn-success btn-lg">Start Investing Today</a>
+    </div>
+</div>
+
+<div class="testimonials py-5">
+    <div class="container">
+        <h2 class="section-title text-center mb-5" data-aos="fade-up">What Our Users Say</h2>
+        <div class="row testimonial-slider" data-aos="fade-up">
+            <div class="col-md-4">
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"EcoLend helped me align my investments with my values. I'm earning returns while supporting renewable energy!"</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="{{ url_for('static', filename='images/testimonial-1.jpg') }}" alt="User" class="rounded-circle">
+                        <div>
+                            <h5>Sarah Johnson</h5>
+                            <small>Investor since 2022</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"As a small business focused on sustainability, EcoLend provided funding when traditional banks wouldn't."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="{{ url_for('static', filename='images/testimonial-2.jpg') }}" alt="User" class="rounded-circle">
+                        <div>
+                            <h5>Michael Rodriguez</h5>
+                            <small>Clean Energy Entrepreneur</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"The platform is intuitive and transparent. I can clearly see where my money goes and the impact it creates."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="{{ url_for('static', filename='images/testimonial-3.jpg') }}" alt="User" class="rounded-circle">
+                        <div>
+                            <h5>Jennifer Lee</h5>
+                            <small>Impact Investor</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="recent-projects py-5">
+    <div class="container">
+        <div class="d-flex justify-content-between align-items-center mb-4">
+            <h2 class="section-title mb-0" data-aos="fade-right">Recent Projects</h2>
+            <a href="{{ url_for('projects') }}" class="btn btn-outline-primary" data-aos="fade-left">View All</a>
+        </div>
+        <div class="row g-4" data-aos="fade-up">
+            <div class="col-md-4">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="{{ url_for('static', filename='images/project-solar.jpg') }}" alt="Solar Energy Project" class="img-fluid">
+                        <div class="project-category">Energy</div>
+                    </div>
+                    <div class="project-details">
+                        <h3>Community Solar Farm</h3>
+                        <div class="progress mb-3">
+                            <div class="progress-bar bg-success" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <div class="d-flex justify-content-between project-stats">
+                            <div>$375,000 raised</div>
+                            <div>75%</div>
+                        </div>
+                        <a href="#" class="btn btn-outline-success w-100 mt-3">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="{{ url_for('static', filename='images/project-agriculture.jpg') }}" alt="Sustainable Agriculture" class="img-fluid">
+                        <div class="project-category">Agriculture</div>
+                    </div>
+                    <div class="project-details">
+                        <h3>Regenerative Farming Initiative</h3>
+                        <div class="progress mb-3">
+                            <div class="progress-bar bg-success" role="progressbar" style="width: 42%" aria-valuenow="42" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <div class="d-flex justify-content-between project-stats">
+                            <div>$84,000 raised</div>
+                            <div>42%</div>
+                        </div>
+                        <a href="#" class="btn btn-outline-success w-100 mt-3">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="{{ url_for('static', filename='images/project-water.jpg') }}" alt="Water Treatment" class="img-fluid">
+                        <div class="project-category">Water</div>
+                    </div>
+                    <div class="project-details">
+                        <h3>Clean Water Treatment System</h3>
+                        <div class="progress mb-3">
+                            <div class="progress-bar bg-success" role="progressbar" style="width: 91%" aria-valuenow="91" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <div class="d-flex justify-content-between project-stats">
+                            <div>$182,000 raised</div>
+                            <div>91%</div>
+                        </div>
+                        <a href="#" class="btn btn-outline-success w-100 mt-3">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="newsletter-section py-5 bg-light">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-8 text-center" data-aos="fade-up">
+                <h3>Stay Updated</h3>
+                <p class="mb-4">Subscribe to our newsletter for the latest sustainable investment opportunities and news.</p>
+                <form class="newsletter-form">
+                    <div class="input-group mb-3">
+                        <input type="email" class="form-control" placeholder="Your email address" aria-label="Email address">
+                        <button class="btn btn-success" type="submit">Subscribe</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Add CSS for animations -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+<!-- Add JavaScript for animations -->
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    // Initialize AOS animations
+    AOS.init({
+      duration: 800,
+      once: true
+    });
+    
+    // Add scroll animations for elements
+    const scrollElements = document.querySelectorAll('.scroll-animation');
+    scrollElements.forEach(el => {
+      el.classList.add('opacity-0');
+    });
+    
+    // Initialize testimonial slider if you're using one
+    // This is a placeholder for actual slider initialization code
+    // You might want to use Swiper, Slick, or another library
+  });
+</script>
+
+<style>
+  /* Custom styles for the index page */
+  .hero-section {
+    padding: 100px 0;
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    overflow: hidden;
+  }
+  
+  .text-accent {
+    color: #28a745;
+  }
+  
+  .hero-title {
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+  }
+  
+  .hero-subtitle {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+    color: #6c757d;
+  }
+  
+  .feature-card {
+    background: white;
+    border-radius: 10px;
+    padding: 30px;
+    height: 100%;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .feature-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+  }
+  
+  .feature-icon {
+    font-size: 2.5rem;
+    color: #28a745;
+    margin-bottom: 20px;
+  }
+  
+  .timeline {
+    position: relative;
+    padding: 20px 0;
+  }
+  
+  .timeline:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    width: 3px;
+    background: #28a745;
+    transform: translateX(-50%);
+  }
+  
+  .timeline-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 50px;
+  }
+  
+  .timeline-number {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: #28a745;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    z-index: 2;
+    box-shadow: 0 0 0 5px rgba(40, 167, 69, 0.2);
+  }
+  
+  .timeline-content {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    margin-left: 20px;
+    flex: 1;
+  }
+  
+  .testimonial-card {
+    background: white;
+    border-radius: 10px;
+    padding: 25px;
+    margin: 15px 0;
+    height: 100%;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+  }
+  
+  .testimonial-author {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .testimonial-author img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    margin-right: 15px;
+  }
+  
+  .project-card {
+    border-radius: 10px;
+    overflow: hidden;
+    background: white;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease;
+    height: 100%;
+  }
+  
+  .project-card:hover {
+    transform: translateY(-10px);
+  }
+  
+  .project-image {
+    position: relative;
+    height: 200px;
+    overflow: hidden;
+  }
+  
+  .project-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .project-category {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: #28a745;
+    color: white;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+  }
+  
+  .project-details {
+    padding: 20px;
+  }
+  
+  .project-stats {
+    color: #6c757d;
+    font-size: 0.9rem;
+  }
+  
+  .cta-section {
+    background: linear-gradient(135deg, #28a745 0%, #20c997 100%);
+    color: white;
+    padding: 80px 0;
+  }
+  
+  .newsletter-form .form-control {
+    height: 50px;
+    border-radius: 5px 0 0 5px;
+  }
+  
+  .newsletter-form .btn {
+    border-radius: 0 5px 5px 0;
+  }
+  
+  @media (max-width: 768px) {
+    .hero-title {
+      font-size: 2.5rem;
+    }
+    
+    .hero-section {
+      padding: 60px 0;
+      text-align: center;
+    }
+    
+    .timeline:before {
+      left: 30px;
+    }
+    
+    .timeline-item {
+      flex-direction: column;
+      align-items: flex-start;
+      padding-left: 60px;
+    }
+    
+    .timeline-number {
+      position: absolute;
+      left: 0;
+    }
+    
+    .timeline-content {
+      margin-left: 0;
+      margin-top: 20px;
+      width: 100%;
+    }
+  }
+</style>
+{% endblock %}
