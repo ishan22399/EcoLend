@@ -14,9 +14,9 @@
                     <a href="{{ url_for('signup') }}" class="btn btn-outline-success btn-lg">Get Started</a>
                 </div>
             </div>
-            <div class="col-lg-6 hero-image-column animate__animated animate__fadeIn animate__delay-1s">
-                <img src="{{ url_for('static', filename='images/eco-finance.svg') }}" alt="EcoLend Illustration" class="img-fluid">
-            </div>
+            <!-- <div class="col-lg-6 hero-image-column animate__animated animate__fadeIn animate__delay-1s">
+                <img src="https://images.unsplash.com/photo-1740382281576-95db2cf42d72?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDR8NnNNVmpUTFNrZVF8fGVufDB8fHx8fA%3D%3D" alt="EcoLend Illustration" class="img-fluid">
+            </div> -->
         </div>
     </div>
 </div>
@@ -96,55 +96,90 @@
     <div class="container text-center" data-aos="zoom-in">
         <h2 class="mb-4">Ready to make a difference?</h2>
         <p class="lead mb-4">Join thousands of investors funding a sustainable future.</p>
-        <a href="{{ url_for('signup') }}" class="btn btn-success btn-lg">Start Investing Today</a>
+        <a href="{{ url_for('signup') }}" class="btn btn-success btn-lg pulse-animation">Start Investing Today</a>
     </div>
 </div>
 
 <div class="testimonials py-5">
     <div class="container">
         <h2 class="section-title text-center mb-5" data-aos="fade-up">What Our Users Say</h2>
-        <div class="row testimonial-slider" data-aos="fade-up">
-            <div class="col-md-4">
-                <div class="testimonial-card">
-                    <div class="testimonial-content">
-                        <p>"EcoLend helped me align my investments with my values. I'm earning returns while supporting renewable energy!"</p>
+        <div class="testimonial-carousel" data-aos="fade-up">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="testimonial-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="testimonial-quote">
+                            <i class="bi bi-quote text-success"></i>
+                        </div>
+                        <div class="testimonial-content">
+                            <p>"EcoLend helped me align my investments with my values. I'm earning returns while supporting renewable energy projects that make a real difference!"</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <img src="https://randomuser.me/api/portraits/women/32.jpg" alt="Sarah Johnson" class="rounded-circle">
+                            <div>
+                                <h5>Sarah Johnson</h5>
+                                <small>Investor since 2022</small>
+                                <div class="testimonial-rating">
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="testimonial-author">
-                        <img src="{{ url_for('static', filename='images/testimonial-1.jpg') }}" alt="User" class="rounded-circle">
-                        <div>
-                            <h5>Sarah Johnson</h5>
-                            <small>Investor since 2022</small>
+                </div>
+                <div class="col-md-4">
+                    <div class="testimonial-card featured" data-aos="fade-up" data-aos-delay="200">
+                        <div class="testimonial-quote">
+                            <i class="bi bi-quote text-success"></i>
+                        </div>
+                        <div class="testimonial-content">
+                            <p>"As a small business focused on sustainability, EcoLend provided funding when traditional banks wouldn't. Their platform made the entire process transparent and seamless."</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <img src="https://randomuser.me/api/portraits/men/54.jpg" alt="Michael Rodriguez" class="rounded-circle">
+                            <div>
+                                <h5>Michael Rodriguez</h5>
+                                <small>Clean Energy Entrepreneur</small>
+                                <div class="testimonial-rating">
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-half text-warning"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="testimonial-card" data-aos="fade-up" data-aos-delay="300">
+                        <div class="testimonial-quote">
+                            <i class="bi bi-quote text-success"></i>
+                        </div>
+                        <div class="testimonial-content">
+                            <p>"The platform is intuitive and transparent. I can clearly see where my money goes and the impact it creates. It's investing with purpose, not just profit."</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Jennifer Lee" class="rounded-circle">
+                            <div>
+                                <h5>Jennifer Lee</h5>
+                                <small>Impact Investor</small>
+                                <div class="testimonial-rating">
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="col-md-4">
-                <div class="testimonial-card">
-                    <div class="testimonial-content">
-                        <p>"As a small business focused on sustainability, EcoLend provided funding when traditional banks wouldn't."</p>
-                    </div>
-                    <div class="testimonial-author">
-                        <img src="{{ url_for('static', filename='images/testimonial-2.jpg') }}" alt="User" class="rounded-circle">
-                        <div>
-                            <h5>Michael Rodriguez</h5>
-                            <small>Clean Energy Entrepreneur</small>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="testimonial-card">
-                    <div class="testimonial-content">
-                        <p>"The platform is intuitive and transparent. I can clearly see where my money goes and the impact it creates."</p>
-                    </div>
-                    <div class="testimonial-author">
-                        <img src="{{ url_for('static', filename='images/testimonial-3.jpg') }}" alt="User" class="rounded-circle">
-                        <div>
-                            <h5>Jennifer Lee</h5>
-                            <small>Impact Investor</small>
-                        </div>
-                    </div>
-                </div>
+            <div class="text-center mt-4" data-aos="fade-up" data-aos-delay="400">
+                <a href="#" class="btn btn-outline-success">Read More Stories</a>
             </div>
         </div>
     </div>
@@ -465,5 +500,100 @@
       width: 100%;
     }
   }
+  
+  /* Additional styles for the improved testimonials section */
+.testimonial-card {
+  background: white;
+  border-radius: 12px;
+  padding: 30px;
+  margin: 15px 0;
+  height: 100%;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.07);
+  transition: all 0.3s ease;
+  position: relative;
+  border-top: 5px solid #28a745;
+}
+
+.testimonial-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+}
+
+.testimonial-card.featured {
+  transform: scale(1.05);
+  border-top: 5px solid #ffc107;
+  box-shadow: 0 10px 25px rgba(40, 167, 69, 0.15);
+}
+
+.testimonial-card.featured:hover {
+  transform: scale(1.05) translateY(-10px);
+}
+
+.testimonial-quote {
+  font-size: 3rem;
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  opacity: 0.1;
+}
+
+.testimonial-content {
+  font-style: italic;
+  margin-bottom: 20px;
+  position: relative;
+  z-index: 1;
+}
+
+.testimonial-content p {
+  font-size: 1.05rem;
+  line-height: 1.6;
+}
+
+.testimonial-author {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  border-top: 1px solid rgba(0,0,0,0.05);
+  padding-top: 15px;
+}
+
+.testimonial-author img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  margin-right: 15px;
+  border: 3px solid rgba(40, 167, 69, 0.2);
+  transition: all 0.3s ease;
+}
+
+.testimonial-card:hover .testimonial-author img {
+  transform: scale(1.1);
+  border-color: rgba(40, 167, 69, 0.5);
+}
+
+.testimonial-rating {
+  margin-top: 5px;
+}
+
+.pulse-animation {
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(40, 167, 69, 0.7);
+  }
+  
+  70% {
+    transform: scale(1.05);
+    box-shadow: 0 0 0 10px rgba(40, 167, 69, 0);
+  }
+  
+  100% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(40, 167, 69, 0);
+  }
+}
 </style>
 {% endblock %}
