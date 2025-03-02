@@ -41,7 +41,7 @@ EcoLend
 
 1. Clone the repository:
    ```
-   git clone https://github.com/yourusername/EcoLend.git
+   git clone https://github.com/ishan22399/EcoLend.git
    ```
 2. Navigate to the project directory:
    ```
